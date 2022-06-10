@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: https://polls.apiblueprint.org/
+HOST: https://localhost:8080
 
 # Junit5 tests
 
@@ -7,29 +7,18 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
 ## Questions Collection [/questions]
 
-### List All Users [GET]
+### User/{id} [GET]
 
 + Response 200 (application/json)
-
         [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
+                {
+                         "name": "Vinicius",
+                         "email": "email@gmail.com",
+                         "password": "1213",
+                         "id": 1
+                }
         ]
+
+
+
 
